@@ -41,7 +41,7 @@ def resolve_data_dir(data_dir: str | os.PathLike[str] | None = None) -> Path:
     notebook or script.
     """
 
-    raw_value = data_dir or os.environ.get("MOVIELENS_DATA_DIR") or "data/movielens-20m"
+    raw_value = data_dir or os.environ.get("MOVIELENS_DATA_DIR") or "data/ml-20m"
     raw_path = Path(raw_value).expanduser()
     if not raw_path.is_absolute():
         raw_path = Path.cwd() / raw_path

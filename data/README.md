@@ -1,10 +1,19 @@
-# Data directory
+# Dataset
 
-Place the extracted MovieLens-20M CSV files in `data/ml-20m/`, or point
-`MOVIELENS_DATA_DIR` to the extracted directory. The full dataset is not
-committed to the repository.
+The official MovieLens-20M files are stored locally in data/ml-20m/:
 
-The tracked `sample/` directory is a tiny deterministic fixture used to smoke
-test imports, preprocessing, notebooks, and GitHub delivery. It is not large
-enough for course conclusions or the `>=1000 ratings` support filter.
+    ratings.csv
+    movies.csv
+    tags.csv
+    links.csv
+    genome-scores.csv
+    genome-tags.csv
+
+The archive was downloaded from:
+https://files.grouplens.org/datasets/movielens/ml-20m.zip
+
+The archive MD5 was verified before extraction. The full data directory is
+ignored by Git because the CSV files are too large for a normal GitHub commit.
+Do not replace it with MovieLens latest or another MovieLens version: the
+assignment requires MovieLens-20M.
 

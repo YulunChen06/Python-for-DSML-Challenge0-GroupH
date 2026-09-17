@@ -1,0 +1,6 @@
+check,n_records,match_rate,orphan_records
+ratings.movieId_in_movies,20000263,1.0,0
+tags.movieId_in_movies,465564,1.0,0
+genome_scores.movieId_in_movies,11709768,1.0,0
+genome_scores.tagId_in_genome_tags,11709768,1.0,0
+

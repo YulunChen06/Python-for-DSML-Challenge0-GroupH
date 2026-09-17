@@ -1,0 +1,4 @@
+scope,genre,movie_count,rating_count,avg_rating,median_rating,rating_std,rating_var
+all movies,Film-Noir,330,216689,3.96538126070082,4.0,0.8954666626158478,0.8018605438563646
+movies with >= 1000 ratings,Film-Noir,36,192295,4.00100106607036,4.0,0.8871952099426104,0.7871153405451126
+

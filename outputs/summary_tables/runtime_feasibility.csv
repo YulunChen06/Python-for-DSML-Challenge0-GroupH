@@ -1,0 +1,3 @@
+runtime_available_in_loaded_files,runtime_columns,external_id_columns,release_year_parse_rate,conclusion
+False,[],"['imdbId', 'tmdbId']",0.9991568296795953,Runtime is not directly included in the provided MovieLens files. A reliable runtime trend requires an external metadata source joined through IMDb/TMDb identifiers; title length is not a valid proxy.
+
