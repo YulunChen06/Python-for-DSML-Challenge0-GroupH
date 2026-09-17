@@ -14,9 +14,9 @@ quality checks, and baseline EDA consistent across all team notebooks.
 ├── figures/
 ├── notebooks/
 │   ├── 00_data_loading_and_eda.ipynb
-│   ├── 01_user_temporal.ipynb
-│   ├── 02_genre_movie.ipynb
-│   ├── 03_tags_advanced.ipynb
+│   ├── 01_user_temporal.ipynb     # Person B starter template
+│   ├── 02_genre_movie.ipynb       # Person C starter template
+│   ├── 03_tags_advanced.ipynb     # Person D starter template
 │   └── final_submission.ipynb
 ├── outputs/
 │   ├── intermediate/
@@ -83,6 +83,12 @@ Run notebooks in this order:
 - User tags are normalized only with lowercase and surrounding whitespace
   removal for the primary analysis. Hyphen-to-space normalization is used only
   for the explicitly labelled user-tag/genome-tag matching comparison.
+
+## Contributor assignments
+
+The detailed contributor coding assignments are in TEAM_ASSIGNMENTS.md. The
+three contributor notebooks are starter templates; their analysis cells are the
+work to be completed and handed back for leader review.
 
 ## Runtime feasibility
 

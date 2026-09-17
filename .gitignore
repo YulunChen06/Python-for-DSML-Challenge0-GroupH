@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+venv/
+.venv/
+data/ml-20m/
+data/movielens-20m/
+figures/*.png
+outputs/**/*.csv
+outputs/**/*.parquet
+outputs/**/*.json
+*.log
+
