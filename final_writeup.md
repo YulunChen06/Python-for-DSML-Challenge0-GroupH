@@ -1,49 +1,48 @@
 # MovieLens-20M Challenge 0 - Group H
 
-## Dataset and goal
+## Current leader deliverable
 
-The leader pipeline was run on the official MovieLens-20M release:
-20,000,263 ratings, 27,278 movies, 138,493 users, 465,564 tag applications,
-and 11,709,768 genome-score rows. File-level quality checks found no duplicate
-rows. The analysis describes rating behavior, genres, tags, and time trends.
+The leader has prepared the official MovieLens-20M loading pipeline, shared
+preprocessing tables, file/key quality checks, dataset scale, the global rating
+baseline, and the runtime feasibility investigation. The contributor findings
+are intentionally not written here yet; Persons B, C, and D must complete and
+hand off their own analyses first.
 
-## Key findings
+## Leader-owned checks
 
-1. Ratings are concentrated toward the upper half of the scale. The mean is
-   3.526, the median is 3.5, and the mode is 4.0. The observed range is 0.5 to
-   5.0.
+- Dataset files, row counts, missing cells, duplicate rows, and join coverage
+  are exported under `outputs/summary_tables/`.
+- Shared tables are defined in `src/preprocess.py`: `ratings`, `movies`,
+  `movie_stats`, `user_stats`, `exploded_genres`, `rating_genre_df`, and
+  `movie_tag_stats`.
+- The global rating distribution is exported as
+  `rating_counts.csv`, `rating_summary.csv`, and
+  `figures/rating_distribution.png`.
+- Runtime is not present in the supplied MovieLens files. A reliable runtime
+  trend requires a reproducible external metadata join through IMDb/TMDb IDs;
+  title length is not used as a proxy.
 
-2. User activity is strongly right-skewed. The median user gives 68 ratings,
-   while the most active user gives 9,254. The top 1% activity group has a mean
-   user average rating of 3.253, compared with 3.644 for the bottom 50%.
-   This is descriptive and not causal.
+## Contributor handoffs still required
 
-3. Film-Noir has the highest rating-record mean: 3.965 across all movies and
-   4.001 after retaining only movies with at least 1,000 ratings. The result
-   should be read with movie and rating support, not as a popularity ranking.
+### Person B
 
-4. The most frequently applied user tag is sci-fi with 3,576 applications,
-   followed by based on a book with 3,307. Only 1,122 of 35,020 normalized
-   non-empty user tags match a genome tag exactly after the documented
-   normalization, a 3.20% vocabulary match rate.
+Complete user activity, Challenge Question 2, rating-year and release-year
+trends, the two-decade comparison, figures, findings, and limitations.
 
-5. With at least 50 movies per pair, Crime + Drama has the largest gain over
-   the better individual genre mean: 3.794 versus 3.675, a gain of 0.120. The
-   pair contains 1,677 movies and 1,682,632 rating records.
+### Person C
 
-## Temporal and runtime notes
+Complete genre statistics, Challenge Questions 1 and 5, single/multi-genre
+analysis, genre-count analysis, pair support, decade prominence, figures,
+findings, and limitations.
 
-Rating activity varies by rating year. The 2015 data contain 283,886 ratings
-and are not a complete calendar year, so the end-of-period decline must not be
-interpreted as user loss. Runtime is not included in MovieLens-20M. links.csv
-contains IMDb and TMDb identifiers, so a reliable runtime trend requires an
-external metadata join; title length is not used as a proxy.
+### Person D
 
-## Limitations and next step
+Complete tag cleaning and coverage, tag/popularity analysis, genome coverage,
+selected movie profiles, Challenge Question 3, the stretch goal decision,
+figures, findings, and limitations.
 
-The data are observational. Multi-genre movies contribute a rating record to
-each constituent genre, older release years have uneven support, and exact
-tag matching underestimates semantic agreement. The next step is for Persons
-B, C, and D to complete their starter notebooks and hand back the required
-tables and figures described in TEAM_ASSIGNMENTS.md.
+## Final integration rule
 
+Only after the three handoffs pass the leader review should their evidence be
+inserted into `notebooks/final_submission.ipynb` and this write-up. No
+contributor result is pre-filled by the leader.

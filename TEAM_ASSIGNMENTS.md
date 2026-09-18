@@ -2,6 +2,8 @@
 
 The leader has prepared the shared data contract and baseline infrastructure.
 Each contributor owns the implementation and interpretation of one notebook.
+The repository intentionally does not contain completed contributor results;
+the handoff files below are assignments, not files for the leader to fill in.
 Do not duplicate or redefine the shared loading logic in src/.
 
 ## Shared contract for everyone
@@ -141,4 +143,3 @@ The leader will check that every handoff:
 - runs top-to-bottom on a clean environment with MovieLens-20M;
 - has a concise Challenge Question answer that can be copied into the final
   notebook and final_writeup.md.
-

@@ -1,8 +1,0 @@
-file,n_rows,n_columns,missing_cells,duplicate_rows,memory_mb
-genome-scores.csv,11709768,3,0,0,268.015
-genome-tags.csv,1128,2,0,0,0.072
-links.csv,27278,3,252,0,0.624
-movies.csv,27278,3,0,0,3.937
-ratings.csv,20000263,4,0,0,610.36
-tags.csv,465564,4,16,0,37.349
-
