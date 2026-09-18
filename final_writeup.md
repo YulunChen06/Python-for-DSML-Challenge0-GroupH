@@ -3,10 +3,10 @@
 ## Current leader deliverable
 
 The leader has prepared the official MovieLens-20M loading pipeline, shared
-preprocessing tables, file/key quality checks, dataset scale, the global rating
-baseline, and the runtime feasibility investigation. The contributor findings
-are intentionally not written here yet; Persons B, C, and D must complete and
-hand off their own analyses first.
+preprocessing tables, file/key quality checks, dataset scale, the PDF Level 1
+baseline exploration, the global rating baseline, and the runtime feasibility
+investigation. The contributor findings are intentionally not written here yet;
+Persons B, C, and D must complete and hand off their own analyses first.
 
 ## Leader-owned checks
 
@@ -18,6 +18,10 @@ hand off their own analyses first.
 - The global rating distribution is exported as
   `rating_counts.csv`, `rating_summary.csv`, and
   `figures/rating_distribution.png`.
+- The PDF Level 1 baseline also exports basic genre movie counts, a top-10
+  genre bar chart, a top-five genre rating boxplot, and basic user summary
+  statistics. These are context baselines, not contributor Challenge Question
+  answers.
 - Runtime is not present in the supplied MovieLens files. A reliable runtime
   trend requires a reproducible external metadata join through IMDb/TMDb IDs;
   title length is not used as a proxy.
@@ -38,8 +42,8 @@ findings, and limitations.
 ### Person D
 
 Complete tag cleaning and coverage, tag/popularity analysis, genome coverage,
-selected movie profiles, Challenge Question 3, the stretch goal decision,
-figures, findings, and limitations.
+selected movie profiles, genre genome relevance profiles, Challenge Question 3,
+the stretch goal decision, figures, findings, and limitations.
 
 ## Final integration rule
 

@@ -7,7 +7,7 @@ venv/
 data/ml-20m/
 data/ml-20m.zip
 data/ml-20m.zip.md5
+data/movielens-20m-dataset.zip
 outputs/intermediate/*
 !outputs/intermediate/.gitkeep
 *.log
-

@@ -1,6 +1,8 @@
 # Group H - contributor coding assignments
 
-The leader has prepared the shared data contract and baseline infrastructure.
+The leader has prepared the shared data contract and the PDF Level 1 baseline
+infrastructure. The Level 1 genre/user summaries in notebook 00 are context
+only; they do not answer the contributor Challenge Questions.
 Each contributor owns the implementation and interpretation of one notebook.
 The repository intentionally does not contain completed contributor results;
 the handoff files below are assignments, not files for the leader to fill in.
@@ -49,8 +51,8 @@ Write code that:
   rating-record support rule;
 - compares two decades using movie count, rating count, average/median rating,
   variance, and user rating behavior;
-- optionally measures user genre diversity for a clearly defined active-user
-  subset.
+- measures rating variance versus genre diversity for a clearly defined active-
+  user subset, as requested by the PDF's advanced questions.
 
 Required handoff:
 
@@ -59,7 +61,9 @@ Required handoff:
 - outputs/ratings_by_year.csv;
 - outputs/release_year_stats.csv;
 - outputs/decade_comparison.csv;
+- outputs/genre_diversity_variance.csv;
 - labeled figures for activity and temporal trends;
+- a labeled genre-diversity/variance figure;
 - three findings, two limitations, and every threshold used.
 
 Review traps: never confuse rating year with release year, never interpret an
@@ -108,6 +112,8 @@ Write code that:
 - checks genome coverage and relevance ranges;
 - selects representative movies with genome coverage and lists their top
   genome tags;
+- compares genome relevance profiles across selected genres and reports
+  support for the comparison;
 - compares user tags with genome tags using exact normalized matching first,
   then labels any qualitative semantic comparison separately;
 - reports matched-tag coverage and identifies high-frequency/low-relevance and
@@ -122,8 +128,9 @@ Required handoff:
 - outputs/movie_tag_stats.csv;
 - outputs/user_tag_genome_comparison.csv;
 - outputs/selected_movie_genome_tags.csv;
+- outputs/genre_genome_profiles.csv;
 - outputs/baseline_predictor_rmse.csv if the stretch goal is attempted;
-- tag, genome, and tag-versus-popularity figures;
+- tag, genome, genre-profile, and tag-versus-popularity figures;
 - three findings, two limitations, normalization rules, match coverage, and
   stretch-goal methodology.
 
